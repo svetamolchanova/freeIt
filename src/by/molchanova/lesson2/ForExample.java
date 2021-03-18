@@ -12,9 +12,9 @@ public class ForExample {
 //            }
             for (int j = 0; j < 5; j++) {
                 System.out.println("***" + j);
-                if (j == 3) {
-                    continue;
-                    //break;
+                if (j == 4) {
+                    //continue;
+                    break;
                 }
                 System.out.println("j  = " + j + ", " + "i = " + i);
             }
