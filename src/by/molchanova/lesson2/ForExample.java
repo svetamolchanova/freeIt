@@ -19,8 +19,7 @@ public class ForExample {
                 System.out.println("j  = " + j + ", " + "i = " + i);
             }
         }
-
-
+        
 //        for (i = 10; i > 5; i--) {
 //            String str = "Hello";
 //            System.out.println(str + " *** " + i);
