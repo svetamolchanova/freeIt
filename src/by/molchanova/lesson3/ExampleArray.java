@@ -6,11 +6,11 @@ public class ExampleArray {
 
     public static void main(String[] args) {
 
-//        int[] i1 = {1, 3, 4, 5};
-//        int[] i2 = new int[5];
-//        for (int i = 0; i <= i1.length - 1; i++) {
-//            System.out.println(i1[i]);
-//        }
+        int[] i1 = {1, 3, 4, 5};
+        int[] i2 = new int[5];
+        for (int i = 0; i <= i1.length - 1; i++) {
+            System.out.println(i1[i]);
+        }
 //
 //        Random r = new Random();
 //        for (int i = 0; i < i2.length; i++) {
