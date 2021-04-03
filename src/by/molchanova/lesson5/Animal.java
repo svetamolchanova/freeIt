@@ -18,10 +18,10 @@ public abstract class Animal {
         return this.name;
     }
 
-    public Animal(String color, int age, String name) {
+    public Animal(String color, int age, Season season) {
         this.color = color;
         this.age = age;
-        this.name = name;
+        this.season = season;
         countAnimal++;
         System.out.println("countAnimal: " + countAnimal);
     }
