@@ -1,13 +1,15 @@
 package by.molchanova.lesson5;
 
 import by.molchanova.*;
+import java.util.*;
+import java.util.regex.*;
 
 public class Runner {
 
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        cat = null;
-        System.gc();
+//        Cat cat = new Cat();
+//        cat = null;
+//        System.gc();
 
 //        Calendar calendar = new GregorianCalendar();
 //        System.out.println(calendar);
