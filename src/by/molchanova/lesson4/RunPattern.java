@@ -7,14 +7,11 @@ public class RunPattern {
 
     public static void main(String[] args) {
 
-        String text = "+375-29";
-        String patternText = ".\\d{3}-[0-9]{2,7}";
-        String pattern = "[!?,.:;]";
-        //System.out.println(text.matches(patternText));
+        Student student = new Student();
+        student.setEmail("svt@12www.com");
 
-//        Pattern regex = Pattern.compile(patternText);
-//        Matcher matcher = regex.matcher(pattern);
-//        //System.out.println(matcher.find());
+        validateEmail(student.getEmail());
+
 //        while (matcher.find()) {
 //            System.out.println(matcher.start() + " " + matcher.end());
 //        }
@@ -25,9 +22,17 @@ public class RunPattern {
 //            System.out.println(matcher.start() + " " + matcher.end());
 //        }
 
-        StringTokenizer string = new StringTokenizer(text);
-        while (string.hasMoreElements()) {
-            System.out.println(string.nextToken("-") + ", ");
-        }
+//        StringTokenizer string = new StringTokenizer(text);
+//        while (string.hasMoreElements()) {
+//            System.out.println(string.nextToken("-") + ", ");
+//        }
+    }
+
+    private static void validateEmail(String email) {
+        String emailPattern = "\\w{3}@[a-zA-Z]+\\.[a-zA-Z]+";
+
+        Pattern regex = Pattern.compile(emailPattern);
+        Matcher matcher = regex.matcher(email);
+        System.out.println(matcher.find());
     }
 }

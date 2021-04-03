@@ -1,5 +1,7 @@
 package by.molchanova.lesson1;
 
+import java.util.*;
+
 public class User {
 
     public static String country = "BELARUS";
@@ -8,9 +10,6 @@ public class User {
     public int id;
     public String lang;
     public Integer age;
-
-    public static void main(String[] args) {
-    }
 
     public int getId() {
         return this.id;

@@ -2,9 +2,11 @@ package by.molchanova.lesson4.animals;
 
 public class Animal {
 
-    private int size;
+    int size;
     private String color;
     private int age;
+    private Body body;
+    private Head head;
 
     public Animal(String color) {
         this.color = color;
@@ -24,5 +26,10 @@ public class Animal {
 
     public void say() {
         System.out.println("noting");
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Animal run away. Lose object");
     }
 }

@@ -1,6 +1,8 @@
 package by.molchanova.lesson4.animals;
 
-public class Cat extends Animal{
+import by.molchanova.lesson4.animals.*;
+
+public class Cat extends Animal {
 
     String name;
 
@@ -8,13 +10,8 @@ public class Cat extends Animal{
         super(color);
     }
 
-
-
     @Override
     public void say() {
         System.out.println("Meow");
     }
-
-
-
 }
