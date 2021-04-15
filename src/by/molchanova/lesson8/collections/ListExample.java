@@ -8,12 +8,19 @@ public class ListExample {
     public static void main(String[] args) {
         List<User> usersList = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            User user = new User("Name " + i, "" + rand.nextLong(), rand.nextInt(88) + 18);
+            User user = new User("Name " + i, "" + rand.nextLong(), i);
             usersList.add(user);
-            if (i == 3) {
-                usersList.add(user);
-            }
+//            if (i == 3) {
+//                usersList.add(user);
+//            }
         }
+        User user = new User("Name " + 10, "" + rand.nextLong(), 10);
+        //List<User> users = List.of(user);
+        //users.add(user);
+//        User user1 = users.get(0);
+//        user.setName("Name 11");
+//        System.out.println(users);
+
 //        for (int i = 0; i < usersList.size(); i ++) {
 //            User user = usersList.get(i);
 //            if (i == 2) {
@@ -23,17 +30,29 @@ public class ListExample {
 //        }
 
 //        for (User user : usersList) {
-//            System.out.println(user);
+//            if (user.getAge() == 3) {
+//                usersList.remove(3);
+//            }
 //        }
-        usersList.forEach(user -> System.out.println(user.getName()));
-//        ListIterator listIterator = usersList.listIterator();
-////        List<User> users = usersList.subList(3,5);
-////        System.out.println(users);
-////        usersList.add(new User("Name " + 13, "" + rand.nextLong(), rand.nextInt(88) + 18));
-////        System.out.println(usersList);
-//
-//
-//        List<User> usersList2 = new ArrayList<>();
+        System.out.println(usersList);
+//        usersList.forEach(user -> System.out.println(user.getName()));
+        //usersList.clear();
+
+//        Iterator listIterator = usersList.iterator();
+//        while (listIterator.hasNext()) {
+//            User user = (User) listIterator.next();
+//            if (user.getAge() == 3) {
+//                listIterator.remove();
+//            }
+//        }
+//        System.out.println(usersList);
+//        List<User> users = usersList.subList(3,5);
+//        System.out.println(users);
+//        usersList.add(new User("Name " + 13, "" + rand.nextLong(), rand.nextInt(88) + 18));
+//        System.out.println(usersList);
+
+
+//        List<User> usersList2 = new LinkedList<>();
 //        for (int i = 0; i < 3; i++) {
 //            User user = new User("Name " + i, "" + rand.nextLong(), rand.nextInt(88) + 18);
 //            usersList2.add(user);
@@ -45,7 +64,6 @@ public class ListExample {
 //        printFirstElement(usersList2);
 
     }
-
 
     public static void printFirstElement(List<User> userList) {
         System.out.println(userList);

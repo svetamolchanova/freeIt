@@ -24,7 +24,11 @@ public class SetExample {
 
         Iterator iterator = userSet.iterator();
         while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+            User user = (User) iterator.next();
+            if (user.getAge() == 3) {
+                iterator.remove();
+            }
         }
+        System.out.println(userSet);
     }
 }

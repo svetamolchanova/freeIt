@@ -1,5 +1,7 @@
 package by.molchanova.lesson8.collections;
 
+import java.util.*;
+
 public class User {
     String name;
     String passportNumber;
@@ -45,12 +47,28 @@ public class User {
             return false;
         return getAge().equals(user.getAge());
     }
+//
+//    @Override
+//    public int hashCode() {
+//        int result = 31 * getPassportNumber().hashCode();
+//        result = 31 * result + getAge().hashCode();
+//        return result;
+//    }
+
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        User user = (User) o;
+//        return name.equals(user.name) &&
+//                Objects.equals(passportNumber, user.passportNumber) &&
+//                Objects.equals(age, user.age);
+//    }
 
     @Override
     public int hashCode() {
-        int result = 31 * getPassportNumber().hashCode();
-        result = 31 * result + getAge().hashCode();
-        return result;
+        return Objects.hash(name, passportNumber, age);
     }
 
     @Override

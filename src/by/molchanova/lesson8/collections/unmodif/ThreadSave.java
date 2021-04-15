@@ -15,9 +15,8 @@ public class ThreadSave {
             syncCollection.forEach((e) -> {
                 uppercasedCollection.add(e.toUpperCase());
             });
-           // }
+            //}
         };
-
 
         Thread thread1 = new Thread(listOperations);
         Thread thread2 = new Thread(listOperations);
