@@ -1,5 +1,7 @@
 package by.molchanova.lesson9.guesswhat;
-
+/*
+0,1,4,7 - error
+ */
 @SuppressWarnings("unused")
 public class Ugadajka2_4 {
     public static void main(String[] args) {

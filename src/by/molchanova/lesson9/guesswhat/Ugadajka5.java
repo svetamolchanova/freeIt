@@ -1,5 +1,8 @@
 package by.molchanova.lesson9.guesswhat;
-
+/*
+#1 in -> #2 in -> #3 in -> #4 in ->#4 Trow->
+#3 catch -> #1 catch -< #1 out
+ */
 @SuppressWarnings("unused")
 public class Ugadajka5 {
 	public static void main(String[] args) {

@@ -1,5 +1,7 @@
 package by.molchanova.lesson9.guesswhat;
-
+/*
+0,1,3,4,6,7,8
+ */
 @SuppressWarnings("unused")
 public class Ugadajka2_3 {
     public static void main(String[] args) {
