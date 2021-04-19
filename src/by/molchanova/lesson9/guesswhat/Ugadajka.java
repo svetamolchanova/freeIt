@@ -1,7 +1,7 @@
 package by.molchanova.lesson9.guesswhat;
 
 public class Ugadajka {
-	
+
 	public static void main(String[] args) {
 		System.err.println("#1.in");
 		f();
