@@ -4,6 +4,10 @@ public class ArrayIndexException extends Exception {
 
 	long exceptionTime;
 
+	public ArrayIndexException() {
+	    super("Вышли за пределы");
+    }
+
 	public ArrayIndexException(String message) {
 		super(message);
 	}
