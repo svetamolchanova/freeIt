@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cats>
+    <cat id="1">
+        <name>Tom</name>
+        <color>white</color>
+        <body>
+            <legs>4</legs>
+            <head>1</head>
+        </body>
+    </cat>
+    <cat id="2">
+        <name>Barsik</name>
+        <color>black</color>
+        <body>
+            <legs>4</legs>
+            <head>1</head>
+        </body>
+    </cat>
+</cats>

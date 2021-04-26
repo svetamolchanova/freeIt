@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+    <xsi:element name="cats">
+        <xsi:complexType>
+            <xsi:sequence>
+                <xsi:element type="CatType" name="cat" maxOccurs="unbounded" minOccurs="0">
+                </xsi:element>
+            </xsi:sequence>
+        </xsi:complexType>
+    </xsi:element>
+
+    <xsi:complexType name="CatType">
+        <xsi:all>
+            <xsi:element name="name" type="xsi:string"/>
+            <xsi:element name="color" type="xsi:string"/>
+            <xsi:element name="body" type="BodyType"/>
+        </xsi:all>
+        <xsi:attribute name="id"/>
+    </xsi:complexType>
+
+    <xsi:complexType name="BodyType">
+        <xsi:all>
+            <xsi:element name="legs" type="xsi:string"/>
+            <xsi:element name="head" type="xsi:string"/>
+        </xsi:all>
+    </xsi:complexType>
+</xsi:schema>

@@ -1,0 +1,11 @@
+<!ELEMENT books (book)*>
+        <!ELEMENT book (title|author|character)*>
+        <!ATTLIST book
+                isbn CDATA #IMPLIED>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!ELEMENT character (name|friend-of|since|qualification)*>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT friend-of (#PCDATA)>
+        <!ELEMENT since (#PCDATA)>
+        <!ELEMENT qualification (#PCDATA)>
