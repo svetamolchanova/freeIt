@@ -1,61 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE books [
-        <!ELEMENT books (book)*>
-        <!ELEMENT book (title|author|character)*>
-        <!ATTLIST book
-                isbn CDATA #IMPLIED>
-        <!ELEMENT title (#PCDATA)>
-        <!ELEMENT author (#PCDATA)>
-        <!ELEMENT character (name|friend-of|since|qualification)*>
-        <!ELEMENT name (#PCDATA)>
-        <!ELEMENT friend-of (#PCDATA)>
-        <!ELEMENT since (#PCDATA)>
-        <!ELEMENT qualification (#PCDATA)>
-        ]>
-<books>
+<!--<!DOCTYPE books-->
+<!--        [-->
+<!--        <!ELEMENT books (book)*>-->
+<!--        <!ELEMENT book (title|author|character)*>-->
+<!--        <!ATTLIST book-->
+<!--                isbn CDATA #IMPLIED>-->
+<!--        <!ELEMENT title (#PCDATA)>-->
+<!--        <!ELEMENT author (#PCDATA)>-->
+<!--        <!ELEMENT character (name|friend-of|since|qualification)*>-->
+<!--        <!ELEMENT name (#PCDATA)>-->
+<!--        <!ELEMENT friend-of (#PCDATA)>-->
+<!--        <!ELEMENT since (#PCDATA)>-->
+<!--        <!ELEMENT qualification (#PCDATA)>-->
+<!--        ]>-->
+<books xmlns="file://D:/my/FreeIT/project/book.xsd" xmlns:xsi="file://D:/my/FreeIT/project/book.xsd"
+       xmlns:xsy="file://D:/my/FreeIT/project/new_book.xsd">
+    <xsy:book>
+        <xsy:id>1</xsy:id>
+        <xsy:name>new book</xsy:name>
+    </xsy:book>
+    <book isbn="0836217462">
+        <title>
+            1
+        </title>
 
-	<book isbn="0836217462">
-		<title>
-			Being a Dog Is a Full-Time Job
-		</title>
+        <author>Charles M. Schulz</author>
 
-		<author>Charles M. Schulz</author>
+        <character>
+            <name>Snoopy</name>
+            <friend-of>Peppermint Patty</friend-of>
+            <since>1950-10-04</since>
+            <qualification>beagle</qualification>
+        </character>
 
-		<character>
-			<name>Snoopy</name>
-			<friend-of>Peppermint Patty</friend-of>
-			<since>1950-10-04</since>
-			<qualification> beagle </qualification>
-		</character>
+        <character>
+            <name>Peppermint Patty</name>
+            <since>1966-08-22</since>
+            <qualification>bold, brash and tomboyish</qualification>
+        </character>
+    </book>
 
-		<character>
-			<name>Peppermint Patty</name>
-			<since>1966-08-22</since>
-			<qualification>bold, brash and tomboyish</qualification>
-		</character>
-	</book>
+    <book>
+        <title>
+            Being a Dog Is a Full-Time Job
+        </title>
 
-	<book>
-		<title>
-			Being a Dog Is a Full-Time Job
-		</title>
+        <author>Charles M. Schulz</author>
 
-		<author>Charles M. Schulz</author>
+        <character>
+            <name>Snoopy</name>
+            <friend-of>Peppermint Patty</friend-of>
+            <since>1950-10-05</since>
+            <qualification>
+                extroverted beagle
+            </qualification>
+        </character>
 
-		<character>
-			<name>Snoopy</name>
-			<friend-of>Peppermint Patty</friend-of>
-			<since>1950-10-04</since>
-			<qualification>
-				extroverted beagle
-			</qualification>
-		</character>
-
-		<character>
-			<name>Peppermint Patty</name>
-			<since>1966-08-22</since>
-			<qualification>bold, brash and tomboyish</qualification>
-		</character>
-	</book>
+        <character>
+            <name>Peppermint Patty</name>
+            <since>1966-08-22</since>
+            <qualification>bold, brash and tomboyish</qualification>
+        </character>
+    </book>
 
 </books>

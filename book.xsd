@@ -20,16 +20,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element name="qualification">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value=" beagle "/>
-            <xs:enumeration value="bold, brash and tomboyish"/>
-            <xs:enumeration value="
-				extroverted beagle
-			"/>
-          </xs:restriction>
-        </xs:simpleType>
+      <xs:element name="qualification" type="xs:string">
       </xs:element>
     </xs:sequence>
   </xs:complexType>
