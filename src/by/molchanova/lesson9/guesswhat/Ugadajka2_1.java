@@ -1,5 +1,7 @@
 package by.molchanova.lesson9.guesswhat;
-
+/*
+0,1,2,4,5,7,8
+ */
 public class Ugadajka2_1 {
 	public static void main(String[] args) {
         try {
